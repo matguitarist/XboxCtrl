@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/icons.png" type="Texture" id=1]
+[ext_resource path="res://InputControl.gd" type="Script" id=2]
+[ext_resource path="res://assets/small-ui-font.tres" type="DynamicFont" id=3]
+
+[node name="InputControl" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -0.299675, -0.599277 )
+texture = ExtResource( 1 )
+hframes = 42
+
+[node name="ActionName" type="Label" parent="."]
+margin_left = -20.5268
+margin_top = 5.69357
+margin_right = 20.4737
+margin_bottom = 19.6936
+custom_fonts/font = ExtResource( 3 )
+text = "ActionName"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
